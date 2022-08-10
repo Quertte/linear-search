@@ -2,7 +2,7 @@
   "name": "linearsearch",
   "version": "1.0.0",
   "description": "",
-  "main": "linear_search.js",
+  "main": "binarySearch.js",
   "scripts": {
     "test": "jest -i"
   },
