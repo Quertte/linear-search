@@ -1,5 +1,6 @@
 const { linearSearch, globalLinearSearch } = require('../linear_search');
 const { binarySearch, binarySearchRec } = require('../binarySearch');
+const isAnagrams = require('../anagramma');
 
 describe("linearSearch()", function () {
   it("returns first index of item in array", function () {
@@ -44,3 +45,13 @@ describe('Проверка различных реализаций бинарн�
     })
   })
 })
+
+describe('Проверка Анаграмм', () => {
+  it('Тест1', () => {
+    expect(isAnagrams('melon', 'lemon')).toBeTruthy();
+  })
+  it('Тест2', () => {
+    expect(isAnagrams('melon', 'bike')).toBeFalsy();
+  })
+})
+
